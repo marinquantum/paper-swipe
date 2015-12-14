@@ -415,8 +415,7 @@ At the end of the demo, there is a code generator that allows you to play around
       },
 
       _downHandler: function (event) {
-        if (!this._dragging && !this.disableSwipe && !sharedPanel) {
-//        if (!this.dragging && !this.disableSwipe && !sharedPanel && this._validDelta) {
+        if (!this._dragging && !this.disableSwipe && !sharedPanel && this._validDelta) {
           this.$.content.className = 'style-scope paper-swipe';
           // cancel selection
           event.preventDefault();
